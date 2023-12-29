@@ -14,3 +14,10 @@ if mac_address_match:
     print(current_mac)
 else:
     print("Impossible de trouver l'adresse MAC dans la sortie d'ifconfig.")
+
+# Vérifier si l'adresse MAC est celle demandée par l'utilisateur
+user_requested_mac = "2c:44:fd:69:c0:52"  # Remplacez par l'adresse MAC demandée par l'utilisateur
+if current_mac == user_requested_mac:
+    print("L'adresse MAC n'a pas été modifiée.")
+else:
+    print("Attention ! L'adresse MAC a été modifiée.")
