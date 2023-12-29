@@ -4,7 +4,7 @@ import re
 texte = "Les numéros de téléphone sont: 123-456-7890, 234-773-9981 et 567-451-7865"
 
 # Expression régulière pour rechercher un numéro de téléphone
-pattern = re.compile(r'\d{3}-\d{3}-\d{4}')
+pattern = re.compile(r"\d{3}-\d{3}-\d{4}")
 
 # Recherche du motif dans le texte
 resultat = pattern.findall(texte) # tous les numéros
@@ -12,6 +12,6 @@ resultat = pattern.findall(texte) # tous les numéros
 
 # Affichage du résultat
 if resultat:
-    print("Numéro de téléphone trouvé :", resultat)
+    print("Numéro(s) de téléphone trouvé(s) :", resultat)
 else:
     print("Aucun numéro de téléphone trouvé.")
